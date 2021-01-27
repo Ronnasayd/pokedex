@@ -1,11 +1,17 @@
 <template>
   <div id="app">
-    Hello world
+    <home />
   </div>
 </template>
 
 <script>
+import './styles/core.scss'
+import Home from './pages/Home.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Home
+  }
 }
 </script>
