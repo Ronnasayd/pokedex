@@ -1,16 +1,16 @@
 <template>
   <section>
-    <Header />
+    <PokeHeader />
   </section>
 </template>
 
 <script>
-import Header from '../components/Header.vue'
+import PokeHeader from '../components/PokeHeader.vue'
 
 export default {
   name: 'home',
   components: {
-    Header
+    PokeHeader
   }
 }
 </script>
