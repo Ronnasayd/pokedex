@@ -33,7 +33,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/core.scss';
 .pokeheader__search {
   ul {
     position: absolute;

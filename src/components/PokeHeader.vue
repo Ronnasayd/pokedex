@@ -50,7 +50,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/core.scss';
 .pokeheader {
   display: flex;
   justify-content: center;
