@@ -9,10 +9,22 @@
       />
     </div>
     <ul class="pokeheader__search__list" :data-display="modal">
-      <li>Fogo</li>
-      <li>Fogo</li>
-      <li>Fogo</li>
-      <li>Fogo</li>
+      <li>
+        <img src="../../public/assets/img/types/fire.png" alt="pokemon type" />
+        <span>Fire</span>
+      </li>
+      <li>
+        <img src="../../public/assets/img/types/fire.png" alt="pokemon type" />
+        <span>Fire</span>
+      </li>
+      <li>
+        <img src="../../public/assets/img/types/fire.png" alt="pokemon type" />
+        <span>Fire</span>
+      </li>
+      <li>
+        <img src="../../public/assets/img/types/fire.png" alt="pokemon type" />
+        <span>Fire</span>
+      </li>
     </ul>
   </div>
 </template>
@@ -43,11 +55,22 @@ export default {
     text-align: center;
 
     li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       cursor: pointer;
-      padding: remsize(8);
-      margin: 0 remsize(8);
+      padding: remsize(8) remsize(15);
       border-bottom: remsize(0.5) solid rgba($color: #000, $alpha: 0.2);
       font-size: remsize(14);
+
+      &:hover {
+        background: rgba($primaryColor, 0.8);
+        color: $whiteColor;
+      }
+
+      img {
+        width: remsize(25);
+      }
     }
   }
   &__type {
@@ -57,7 +80,7 @@ export default {
     width: remsize(178);
     height: remsize(40);
     border-radius: remsize(51);
-    background: $firstColor;
+    background: $primaryColor;
     margin-right: remsize(50);
 
     p {
